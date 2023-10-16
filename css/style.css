@@ -1,0 +1,577 @@
+/* **************************
+           universe css
+************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary:#FF3939;
+   --light:#FAFAFA;
+
+}
+html,body{
+    font-family: 'Jost', sans-serif;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    padding-left: 0px;
+}
+ul li{
+    list-style: none;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    height: 10px;
+    border-radius: 15px;
+    background-color:#ffffff;
+}
+
+/* **************************
+        header  css
+************************/
+header{
+    position: absolute;
+   width: 100%;
+   margin: 0 auto;
+
+
+}
+.top-header img{
+    position: relative;
+    left: 44%;
+   padding-top: 50px;
+   padding-bottom: 10px;
+}
+.bottom-header .nav-link{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0px 10px;
+}
+.bottom-header .nav-link:hover{
+    color: var(--primary);
+}
+.bottom-header i{
+    color: white;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.fixed{
+    position: fixed;
+    right: 1%;
+    top: 30%;
+}
+.fixed ul li{
+    background-color: white;
+    border-bottom: 1px solid gray;
+}
+
+.fixed ul li i{
+    padding: 10px;
+margin: 8px 3px;
+  color: #7b7b7b;
+
+    font-size: 23px;
+  transition: all 0.2s linear;
+}
+.fixed ul li i:hover{
+    color: #2F4CFF;
+  background-color: #7b7b7b;
+}
+
+
+/* **************************
+  banner  css
+************************/
+.banner{
+   
+    width: 100%;
+  height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items:flex-end;
+}
+
+.banner img{
+    transform: scale(1.3);
+    position: relative;
+    top: 9%;
+
+}
+
+.banner a{
+    background-color: var(--primary);
+    color: white;
+    padding: 20px 60px;
+    position: relative;
+    top: -8%;
+    left: 32%;
+    border-radius: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.banner a:hover{
+    background-color: transparent;
+    border: 1px solid white;
+}
+.banner h1{
+    color:white ;
+    font-size: 170px;
+    position: relative;
+    top: 33%;
+    font-weight: bolder;
+    left: -5%;
+}
+.banner .pin{
+    position: relative;
+    top: 5%;
+    left: 0%;
+}
+.banner h2{
+    color: white;
+    position: relative;
+    top: 35%;
+    left: 18%;
+    font-size: 60px;
+}
+.banner h2 span{
+    color: var(--primary);
+}
+
+
+
+/* **************************
+ about  css
+************************/
+.about{
+    width: 100%;
+    padding: 70px 0px;
+}
+.about img{
+    border-radius: 35px;
+}
+
+.about span{
+    color: white;
+    background-color: black;
+    padding: 13px;
+    text-transform: uppercase;
+    border-radius: 22px;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+.about h2{
+    color: black;
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 70px;
+}
+.about p{
+    font-size: 19px;
+}
+.about h4{
+    font-size: 21px;
+    line-height: 35px;
+
+   color: #7b7b7b;
+}
+
+
+
+/* **************************
+ special   css
+************************/
+.special{
+    padding: 80px 0px;
+}
+.special-left{
+    padding: 0px 80px;
+}
+.special h2{
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    color: black;
+}
+.special .hs {
+    color: white;
+    background-color:var(--primary);
+    padding: 6px 20px;
+    text-transform: uppercase;
+    border-radius: 22px;
+
+    display: inline-block;
+    font-size: 15px;
+}
+
+
+.special-left h4{
+    color: #000;
+    font-weight: 900;
+    font-size: 40px;
+    padding: 20px 0px;
+}
+.special-left  ul li{
+    display: inline-block;
+    color: gray;
+    font-weight: 900;
+    margin-right: 20px;
+ border: 1px solid gray;
+ border-radius: 15px;
+ padding: 1px 15px;
+}
+.special-left .fs{
+  margin-top: 45px;
+  color: #858383;
+  font-weight: 500;
+  font-size: 19px;
+}
+
+.special-left span{
+    color: #000;
+    display:inline-block ;
+    margin-top:25px ;
+    font-size: 40px;
+    font-weight: bold;
+    vertical-align: middle;
+    margin-right: 109px;
+}
+
+.special-left .ls{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 11px 38px;
+    border-radius: 22px;
+    transition: all 0.5s linear;
+}
+.special-left .ls:hover{
+    background-color: var(--primary);
+}
+.special-left .ls i{
+    padding: 0px 10px;
+}
+
+.special-item{
+    background-color: #FBF8F6;
+    padding: 20px 0px;
+   
+}
+
+.special-item h5{
+    color: #000;
+    font-weight: bold;
+    padding: 20px 0px;
+    font-size: 25px;
+}
+
+.special-item span{
+    background-color: var(--primary);
+    display: inline-block;
+    color: white;
+    padding: 5px 25px ;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 21px;
+    margin-bottom: 25px;
+}
+.special-item p {
+    color: #000;
+    font-weight: 600;
+}
+
+.special-item p:hover{
+    color: var(--primary);
+}
+
+
+/* **************************
+  offer   css
+************************/
+
+.offer{
+    width: 100%;
+    background-color: #191A1D;
+    padding: 40px 0px;
+    color: white;
+}
+
+.offer span{
+    background-color: var(--primary);
+    color: white;
+    padding: 6px 23px;
+    display: inline-block;
+    border-radius: 28px;
+    margin-bottom: 25px;
+}
+.offer h2{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.offer p{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.offer a{
+padding: 16px 45px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 25px;
+    transition: all 0.5s linear;
+    text-transform: uppercase;
+}
+.offer a:hover{
+    background-color: var(--primary);
+}
+
+.offer .mk{
+    padding: 137px 126px;
+
+}
+
+
+
+/* **************************
+   trend   css
+************************/
+.trend{
+    width: 100%;
+    padding: 70px 0px;
+}
+
+.trend h2{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 90px;
+    color: black;
+}
+.trend-item{
+    background-color: #FCF8F7;
+    padding: 50px 15px;
+}
+.trend h3{
+    color: #000;
+    font-weight: bold;
+    padding: 15px 0px;
+}
+
+.trend  p{
+    font-size: 25px;
+}
+.trend p{
+    font-size: 20px;
+ color: #7b7b7b;
+ margin-bottom: 25px;
+}
+.trend .af{
+    background-color: var(--primary);
+    color: white;
+  padding: 0px 15px ;
+  border-radius: 15px;
+    font-size: 20px;
+  margin-right: 85px;
+}
+.trend .ls{
+font-size: 17px;
+    font-weight: bold;
+}
+.trend .ls:hover{
+    color: var(--primary);
+}
+
+
+/* **************************
+      client  css
+************************/
+.client{
+    width: 100%;
+    padding: 70px 0px;
+}
+.client img{
+    border-radius: 25px;
+}
+
+.client span{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-color: #000;
+    padding:5px 15px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    
+}
+
+.client h2{
+    font-size: 62px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.client h4{
+    color: var(--primary);
+    font-size: 53px;
+    margin-bottom: 15px;
+}
+.client p{
+    color: #7b7b7b;
+    font-size: 20px;
+}
+.client h6{
+    color: #000;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 20px;
+}
+/* **********************
+gallery css
+
+*****************************/
+.gallery{
+    width: 100%;
+    padding: 60px 0px;
+}
+.gallery .g-item{
+    padding: 0px 0px;
+}
+
+/* **********************
+       footer  css
+
+*****************************/
+
+footer{
+    width: 100%;
+    padding: 70px 0px;
+}
+footer h3{
+    color: #000;
+    font-size: 31px;
+    font-weight: bold;
+   
+}
+footer .f-left h3{ 
+margin-bottom: 25px;
+}
+footer .f-left  p{
+    font-size: 18px;
+    color: rgb(123, 123, 123);
+    font-weight: bold;
+}
+
+
+footer .f-left  .foot-icon i{
+    color: #000;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+footer .f-left  .foot-icon i:hover{
+    color: #7b7b7b;
+}
+
+footer .f-mid i{
+    color: var(--primary);
+    margin: 5px 10px;
+    font-size: 20px;
+}
+
+footer .f-mid p{
+color: #7b7b7b;
+    font-weight: bold;
+}
+
+footer .f-right input{
+    margin: 10px  0px;
+    width: 84%;
+    padding: 10px 109px;
+    border-radius: 27px;
+    outline: none;
+    border: none;
+    background-color: #b2b2b2;
+    caret-color: var(--primary);
+}
+footer .f-right input::placeholder{
+    color: white;
+}
+
+footer  .f-right  button{
+
+    width: 84%;
+    padding: 10px 43px;
+    border-radius: 27px;
+    outline: none;
+    border: none;
+    background-color: var(--primary);
+  
+}
+footer  .f-right  button:hover{
+    background-color: red;
+}
+footer  .f-right  button a{
+    color: white;
+    text-transform: uppercase;
+
+}
+footer  .f-right span{
+    margin-top: 15px;
+    display: inline-block;
+    color: #7b7b7b;
+    font-weight: bold;
+    margin-left: 73px;
+}
+footer  .f-right  h3{
+    margin-left: 87px;
+    margin-bottom: 20px;
+}
+
+/* ******************
+             map css
+***********************/
+.map{
+    position: relative;
+}
+.map i{
+    position: relative;
+    top: -71%;
+    left: 48%;
+    font-size: 50px;
+    color: red;
+}
+.uk {
+position: absolute;
+ display: inline-block;
+  top: 380px;
+ right: 50px;
+
+ 
+}
+.uk i{
+    border: 1px solid var(--primary);
+    border-radius: 100%;
+    padding: 5px;
+    background-color: #7b7b7b;
+    color: white;
+}
